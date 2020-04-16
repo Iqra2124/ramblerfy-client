@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Bellota', cursive;
+}
+header {
+background-image: url('../images/headertemp.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 60px;
+    }
+
+.main-nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding: 5px 0;
+    color:white;
+    text-decoration: blueviolet;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color: white;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 200px;
+    
+}
+
+.btn-one {
+    background-color: transparent;
+    color: whitesmoke;
+    margin-right: 15px;
+    border: 1px solid whitesmoke;
+}
+
+.btn-one:hover{
+    background-color: #bf55ec;
+}
+
+
+.btn-two {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+.btn-two:hover{
+    background-color: #bf55ec;
+}
+
+.colorchange{
+    animation: colorchangeRamblerfy 1s infinite ;
+}
+@keyframes colorchangeRamblerfy {
+    0% {color: gold;}
+    25% {color: maroon;}
+    50% {color: gold;}
+    100% {color: maroon;}
+}
+
+.movable-icon{display: none;}
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width:100%;
+        padding:0 2%;
+
+       }
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+    .main-nav{display: none;}
+   
+    .movable-icon{ display:inline block ;
+        color: mintcream;
+        float: right; 
+        margin-top: 20px;
+        margin-right: 20px;
+    /*Gotta WORK ON THIS PART*/
+    }
+}
+
+.main-nav li{
+        float: left;
+        display: block;
+        margin-top: 10px;
+    }
