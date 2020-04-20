@@ -51,7 +51,7 @@ height: 100vh;
 .main-nav li a {
     padding: 5px 0;
     color:white;
-    text-decoration: blueviolet;
+    text-decoration: rgb(117, 23, 204);
     text-transform: uppercase;
     font-size: 90%;
     font-weight: 100;
@@ -72,41 +72,80 @@ height: 100vh;
 h1{
     color: white;
     font-size: 240%;
+    text-align: center;
     word-spacing: 5px;
     letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
-.btn {
+h2{
+    color:whitesmoke;
+    text-align: center;
+}
+
+#container {
+    text-align: center;
+  }
+  
+ .btn {
+       
     display: inline-block;
     padding: 10px;
+    width:190px;
+    margin-top: 20px;
     font-size: 20px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 200px;
     
 }
 
 .btn-one {
+    background-color: whitesmoke;
+    color: black;
+    margin-right: 15px;
+    border: 1px solid whitesmoke;
+    
+}
+
+.btn-one:hover{
+    background-color: #67168a;
+}
+
+
+.btn-two {
+    background-color: #320446;
+    color: whitesmoke;
+    margin-right: 15px ;
+    border: 1px solid whitesmoke;
+ 
+}
+
+.btn-two:hover{
     background-color: transparent;
+}
+
+.btn-three {
+    background-color: whitesmoke;
+    color:black;
+    margin-right: 15px;
+    border: 1px solid whitesmoke;
+}
+
+.btn-three:hover{
+    background-color: #67168a;
+}
+
+.btn-four{
+    background-color: black;
     color: whitesmoke;
     margin-right: 15px;
     border: 1px solid whitesmoke;
 }
 
-.btn-one:hover{
-    background-color: #bf55ec;
+.btn-four:hover{
+    background-color: #390550;
 }
-
-
-.btn-two {
-    background-color: transparent;
-    color: whitesmoke;
-    border: 1px solid whitesmoke;
-}
-
-.btn-two:hover{
-    background-color: #bf55ec;
-}
-
 .colorchange{
     animation: colorchangeRamblerfy 1s infinite ;
 }
