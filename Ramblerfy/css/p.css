@@ -1,0 +1,62 @@
+body{
+    background-image:url('../images/headertemp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.wrapper{
+    margin: auto;
+    width:70%; /*Moves the info text horizontally*/
+    overflow: hidden;
+}
+
+
+
+.wrapper h1{
+    margin-top: 50px;
+    color: snow;
+    text-align:center;
+}
+
+.wrapper p{
+    text-align: left;
+    width: 70%;
+    padding-bottom: 5px;
+}
+
+.information info.fa{
+font-size: larger;
+padding: 10px;
+border-radius: 70%;
+margin: 15px;
+border: 2px solid black;
+}
+
+.information {
+    display:grid;
+    grid-template-columns: auto auto;
+
+}
+/*
+.form-info{/*not necessarily needed*/
+    /*font-size: large;
+    color:black;
+    letter-spacing: 9px;
+}*/
+.form{
+    max-width: 600px;
+    padding:10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin:15px;
+}
+ input{
+     padding: 10px;
+     margin: 10px;
+     width: 90%;
+     border:none;
+     color:snow;
+     background-color:rgba(0,0,0, 0.7);
+   
+ }
