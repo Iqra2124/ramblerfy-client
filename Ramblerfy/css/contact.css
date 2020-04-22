@@ -12,13 +12,13 @@ header {
     height: 100vh;
     }
 
-/*.container{
+.container{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     padding: 0 20px;
-}*/
+}
 
 .contact_form{
     max-width: 650px;

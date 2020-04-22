@@ -2,14 +2,16 @@ body{
     background-image:url('../images/headertemp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
+    
 }
 
 .wrapper{
     margin: auto;
     width:75%; /*Moves the info text horizontally*/
-    overflow: hidden;
-}
+    background-size: cover;
+    }
 
 
 
@@ -44,17 +46,16 @@ body{
 
 }
 .details{
-    font-size: large;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     font-family: Georgia;
     color:snow;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .form{
     width:550px;
-    
+    max-width: 550px;
     padding:10px;
     background: rgba(0,0,0,0.3);
     border-radius: 5px;
@@ -68,24 +69,49 @@ body{
      border:none;
      color:snow;
      background-color:rgba(0,0,0, 0.7);
+     font-family: Georgia;
    
  }
 
  input::placeholder{
      color: snow;
-          
+    font-family: Georgia;
  }
 
  textarea{
      margin: 10px;
      padding:10px;
+     max-width: 500px;
      width:92%;
      color:snow;
+     font-family: Georgia;
      background-color: rgba(0,0,0, 0.7); 
       }
 
  textarea::placeholder{
     color:snow;
+    font-family: Georgia;
   }
   
-   
+.submit{
+    color:black;
+    margin: 10px;
+    padding: 7px;
+    width: 30%;
+    background-color:rgb(183, 130, 236);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Georgia;
+    }
+
+@media (max-width: 768px){
+    .information{
+        display: block;
+        width: 100%;
+        text-align:center;
+        
+        }
+    .submit{
+        width: 60%;
+    }
+    }
