@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ramblerfy</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Bellota:700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" 
+
+<head>
+    <title>Ramblerfy</title>
+    <!--   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    -->
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellota:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
         integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="social">
-                    <div class="icons">
-                        <a href="#">
-                            <i class="fab fa-facebook"></i>                         
-                        </a>
-                    </div>
-                    <div class="icons">
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>                        
-                        </a>
-                    </div>
-                    <div class="icons">
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>                         
-                        </a>
-                    </div>
-                    <div class="icons">
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>                         
-                        </a>
-                    </div>
-                </div>
-                <div class="row clearfix">
-                    <img src="images/android-chrome-512x512.png" class="logo">
-                    <ul class="main-nav animated slideInRight" id="check-status">
-                        <li><a href="#">SIGN UP</a></li>
-                        <li><a href="#">LOGIN</a></li>
-                        <li><a href="OurTeam.html">OUR TEAM</a></li>
-                        <li><a href="ContactUs.html">CONTACT US</a></li>
+</head>
 
-                    </ul>
-                    <a href="#" class="movable-icon" onclick="slideshow()" > <i class="fa fa-align-justify"></i></i> </a>
+<body>
+    <header>
+        <nav>
+            <div class="social">
+                <div class="icons">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
                 </div>
-            </nav>
-            <div class="main-content-header">
-                <h1>WELCOME TO <span class="colorchange">RAMBLERFY!</span><br>
-                    WHERE YOU FIND THE BEST JAMS <br></h1>
-                <h2>PICK A GENRE!!</h2>
-                <div id="container">
-                    <a href="#" class="btn btn-one">DANCABILITY</a>
-                    <a href="#" class="btn btn-two">DURATION</a>
-                    <a href="#" class="btn btn-three">TEMPO</a>
-                    <a href="#" class="btn btn-four">VARIANCE</a>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-           
-        </header>
-        <script type="text/javascript">
-        function slideshow(){
+
+            <section id="sliders">
+                <div class="slider1">
+                    <div class="dancability"></div>
+                </div>
+                <div class="slider2">
+                    <div class="duration"></div>
+                </div>
+                <div class="slider3">
+                    <div class="tempo"></div>
+                </div>
+                <div class="slider4">
+                    <div class="valence"></div>
+                </div>
+            </section>
+            <div class="row clearfix">
+                <img src="images/android-chrome-512x512.png" class="logo">
+                <ul class="main-nav animated slideInRight" id="check-status">
+                    <li><a href="#">SIGN UP</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="team.html">OUR TEAM</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+
+                </ul>
+                <a href="#" class="movable-icon" onclick="slideshow()"> <i class="fa fa-align-justify"></i></i> </a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <h1>WELCOME TO <span class="colorchange">RAMBLERFY!</span><br>
+                WHERE YOU FIND THE BEST JAMS <br></h1>
+            <h2>PICK A GENRE!!</h2>
+            <div id="container">
+                <a href="#" class="btn btn-one">DANCABILITY</a>
+                <a href="#" class="btn btn-two">DURATION</a>
+                <a href="#" class="btn btn-three">TEMPO</a>
+                <a href="#" class="btn btn-four">VARIANCE</a>
+            </div>
+
+    </header>
+    <script type="text/javascript">
+        function slideshow() {
             var bar = document.getElementById('check-status');
-            if (bar.style.display === "none"){
+            if (bar.style.display === "none") {
                 bar.style.display = "block";
-                }
-            else{
+            }
+            else {
                 bar.style.display = "none"
             }
-            }
-        </script>
-    </body>
+        }
+    </script>
+</body>
+
 </html>

@@ -87,7 +87,7 @@ h2{
     width: 100px;
     height: auto;
     position: absolute;
-    right: 0;
+    margin-left: 90%;
     top: 40%;
 }
 .icons{
@@ -165,6 +165,105 @@ h2{
 .btn-four:hover{
     background-color: #390550;
 }
+#sliders{
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top:23%;
+   
+    background-color:rgba(224, 242, 245, 0.8);
+    
+}
+.slider1{
+    width: 575px;
+    height: 30px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top:3%;
+    background-color:rgba(0,0,0, 0.8);
+}
+.dancability{
+    /*working on slider itself*/
+    position: relative;
+    margin: 12px auto;
+    width: 500px;
+    height: 7px;
+    background-color: seashell;
+    border-radius: 15px;
+
+}
+div.ui-slider-range {
+    display: block;
+    height: 7px;
+    border-radius: (7px);
+    transition-property:(background-color);
+    transition-duration:(100ms);
+  }
+
+.slider2{
+    width: 575px;
+    height: 30px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top:13%;
+    background-color:rgba(0,0,0, 0.8); 
+
+
+}
+
+.duration{
+    /*working on slider itself*/
+    position: relative;
+    margin: 12px auto;
+    width: 500px;
+    height: 7px;
+    background-color: seashell;
+    border-radius: 15px;
+    
+}
+
+.slider3{
+    width: 575px;
+    height: 30px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top:24%;
+   
+    background-color:rgba(0,0,0, 0.8);
+
+}
+
+.tempo{
+    /*working on slider itself*/
+    position: relative;
+    margin: 12px auto;
+    width: 500px;
+    height: 7px;
+    background-color: seashell;
+    border-radius: 15px;
+}
+
+.slider4{
+    width: 575px;
+    height: 30px;
+    position: absolute;
+    margin-left: 2%;
+    margin-top:34%;
+   
+    background-color:rgba(0,0,0, 0.8);
+
+}
+.valence{
+    /*working on slider itself*/
+    position: relative;
+    margin: 12px auto;
+    width: 500px;
+    height: 7px;
+    background-color: seashell;
+    border-radius: 15px;
+}
+
 .colorchange{
     animation: colorchangeRamblerfy 1s infinite ;
 }
