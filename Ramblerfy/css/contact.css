@@ -1,83 +1,121 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-}
-
-header {
-    background-image: url('../images/lavflow.jpg');
+body{
+    background-image:url('../images/headertemp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
+    
+}
+
+.wrapper{
+    margin: auto;
+    width:75%; /*Moves the info text horizontally*/
+    background-size: cover;
     }
 
-.container{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 0 20px;
+
+
+.wrapper h1{
+    margin-top: 50px;
+    color: snow;
+    text-align:center;
+    font-size: 40px;
+    font-family: Georgia;
 }
 
-.contact_form{
-    max-width: 650px;
-    margin: 0 auto;
-    background: rgba(0,0,0,0.5);
-    padding: 30px;
+.wrapper h3{
+    width: 60%;
+    padding-bottom: 5px;
+    color: black;
+    font-family: Georgia;
+    text-align:left;
+}
+
+.information info.fa{
+    color: snow;
+    font-size: larger;
+    padding: 17px;
+    border-radius: 80%;
+    margin: 15px;
+    border: 2px solid black;
+}
+
+.information {
+    display:grid;
+    grid-template-columns: auto auto;
+
+}
+.details{
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Georgia;
+    color:snow;
+    letter-spacing: 3px;
+}
+
+.form{
+    width:550px;
+    max-width: 550px;
+    padding:10px;
+    background: rgba(0,0,0,0.3);
     border-radius: 5px;
-    display: flex;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-.input{
-    display: flex;
-    flex-direction: column;
-    margin-right: 10%;
-
+    margin:15px;
+    margin-left: 50px;
 }
-
-.inputs,
-.message{
-    width: 50%;
+.form h4{
+    color:snow;
+    margin: 10px;
 }
+ input{
+     padding: 10px;
+     margin: 10px;
+     width: 92%;
+     border:none;
+     color:snow;
+     background-color:rgba(0,0,0, 0.7);
+     font-family: Georgia;
+   
+ }
 
-.inputs .input,
-.message textarea{
-    margin: 10px 0;
-    background: transparent;
-    border: 0px;
-    border-bottom: 2px solid #c5ecfd;
-    padding: 15px;
-    color: seashell;
-    width: 100%;
-}
+ input::placeholder{
+     color: snow;
+    font-family: Georgia;
+ }
 
+ textarea{
+     margin: 10px;
+     padding:10px;
+     max-width: 500px;
+     width:92%;
+     color:snow;
+     font-family: Georgia;
+     background-color: rgba(0,0,0, 0.7); 
+      }
 
-.message textarea{
-    height:212px ;
-}
-
-.btn{
-    background: rgb(124, 64, 185);
-    text-align: center;
-    color:white;
-    padding: 15px;
-    border-radius: 5px;
+ textarea::placeholder{
+    color:snow;
+    font-family: Georgia;
+  }
+  
+.submit{
+    color:black;
+    margin: 10px;
+    padding: 7px;
+    width: 30%;
+    background-color:rgb(183, 130, 236);
+    font-weight: bold;
     cursor: pointer;
-           
-}
+    font-family: Georgia;
+    }
 
-@media screen and (max-width: 600px){
-    .contact_form{
-        flex-direction: column;
-    }
-    .message textarea{
-        height: 80px;
-    }
-    .inputs,
-    .message{
+@media (max-width: 768px){
+    .information{
+        display: block;
         width: 100%;
+        text-align:center;
+        
+        }
+    .submit{
+        width: 60%;
     }
-}
-
+    }

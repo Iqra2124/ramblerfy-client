@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CONTACT US</title>
-        <link rel="stylesheet" type="text/css" href="css/contact.css">
-    </head>
-    <body>
-        
-        <header> 
-            <center><h1>CONTACT US</h1></center>
-            <center><h2>Location: Loyola University Chicago</h2></center>
-            <center><h2>Phone #: 1234567890</h2></center>
-            <center><h2>Email: hello123@gmail.com</h2></center>
-            
-        <div class="container">
-                        
-            <div class="contact_form">
-                
-                <div class="inputs">
-                   <input type="text" class="input" placeholder="First & Last Name">
-                   <input type="text" class="input" placeholder="Email Address">
-                   <input type="text" class="input" placeholder="Phone Number">
+<head>
 
-            </div>
-            <div class="message">
-                <textarea placeholder="Your Message"></textarea>
-                <div class="btn">SEND</div>
-            </div>
-            </div>
-        </div>
-        </header>
-        </body>
-</html>
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> Contact US </title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1>Contact Us</h1>
+        <h3>Contact us using any of the information below! <br> Please fill out the form to the right :) </h3>
+    
+    <div class="information">
+        <div>
+        <info class="fa fa-map-marker"></info><span class="details"> Loyola University Chicago </span><br>
+        <info class="fa fa-phone"></info><span class="details"> 1234567890 </span><br>
+        <info class="fa fa-envelope"></info><span class="details"> hello@gmail.com </span>
+    </div>
+   <form>
+        <div class="form">
+        <h4>The fields with * are required.</h4>
+        <input type="text" class="input" placeholder="First & Last Name *" required><br>
+        <input type="Email" class="input" placeholder="Email Address *" required><br>
+        <input type="text" class="input" placeholder="Phone Number"><br>
+        <textarea name="message" placeholder="Message *" rows="5" required></textarea><br>
+        <button class="submit">Send Message</button>
+    </form>
+    </div>
+    </div>
+</body>
+
