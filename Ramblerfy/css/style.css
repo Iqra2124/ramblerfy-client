@@ -83,15 +83,34 @@ h2{
     text-align: center;
 }
 
+.social{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+.icons{
+    width: 40px;
+    margin-right: 50%;
+    height: 40px;
+    border-radius: 50%;
+    background:rgba(224, 242, 245, 0.8);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
 #container {
     text-align: center;
   }
   
  .btn {
        
-    display: inline-block;
+    display: block;
     padding: 10px;
     width:190px;
+    margin-left: 15%;
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
@@ -165,8 +184,6 @@ h2{
 
        }
 }
-
-
 
 @media only screen and (max-width: 768px){
 
