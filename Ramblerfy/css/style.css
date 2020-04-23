@@ -167,22 +167,22 @@ h2{
     background-color: #390550;
 }
 
-#sliders{/*keeps entire section of sliders together in one place*/
-    width: 600px;
+/*#allsliders{/*keeps entire section of sliders together in one place*/
+  /*  width: 600px;
     height: 250px;
     position: absolute;
     margin-left: 40%;
     margin-top:23%;
    
-    background-color:rgba(224, 242, 245, 0.8);
+    background-color:rgba(0, 9, 10, 0.8);
     
-}
+}*/
 .slider1{/*box behind slider*/
-    width: 575px;
+    width: 400px;
     height: 30px;
     position: absolute;
-    margin-left: 2%;
-    margin-top:3%;
+    margin-left: 45%;
+    margin-top:24%;
     background-color:rgba(0,0,0, 0.8);
 }
 #dancability{
@@ -195,21 +195,22 @@ h2{
    background: rgb(180, 66, 224);
    text-align: center;
    border-radius: 10%;
-   margin-top: 10px;
+   margin-top: 0px;
    font-family: Georgia;
    
 }
 
-.range{
-    width:500px;
+.range0{
+    width:375px;
     height: 7px;
     background: skyblue;
+    margin-left: 3%;
     -webkit-appearance: none;
     border-radius: 15px;
 }
 
 
-.range::-webkit-slider-thumb{
+.range0::-webkit-slider-thumb{
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
@@ -217,7 +218,7 @@ h2{
    background: tomato;
    /*box-shadow: -407px 0 0 400px;*/
 }
-
+/*
 .slider2{
     width: 575px;
     height: 30px;
@@ -230,7 +231,7 @@ h2{
 }
 
 .duration{
-    /*working on slider itself*/
+    /*working on slider itself*//*
     position: relative;
     margin: 12px auto;
     width: 500px;
@@ -252,7 +253,7 @@ h2{
 }
 
 .tempo{
-    /*working on slider itself*/
+    /*working on slider itself*//*
     position: relative;
     margin: 12px auto;
     width: 500px;
@@ -272,14 +273,14 @@ h2{
 
 }
 .valence{
-    /*working on slider itself*/
+    /*working on slider itself*//*
     position: relative;
     margin: 12px auto;
     width: 500px;
     height: 7px;
     background-color: seashell;
     border-radius: 15px;
-}
+}*/
 
 .colorchange{
     animation: colorchangeRamblerfy 1s infinite ;

@@ -19,18 +19,57 @@
 </head>
 <header>
 <body>
-     <div class="slider1">
-    <div>
-        <span id="dancability">0</span>
-        <input type="range" class= "range" name="" value="0" min="0" max="100"
-        onmousemove="rangeSlider(this.value) " onChange="rangeSlider(this.value)">
-        </div>
-    <script type="text/javascript">
-        function rangeSlider(value){
-        document.getElementById('dancability').innerHTML = value;}
-        </script>
-    </div>
+    <article class="allsliders">
+   <!-- 
+        <article class="allsliders"></article>-->
+        <div class="slider1">
+            <div>
+                <span id="dancability">0</span>
+                <input type="range" class= "range0" name="" value="0" min="0" max="100"
+                onmousemove="rangeSlider(this.value) " onChange="rangeSlider(this.value)">
+                </div>
+            <script type="text/javascript">
+                function rangeSlider(value){
+                document.getElementById('dancability').innerHTML = value;}
+                </script>
+            </div>
+    </section>         
+                <!--<div class="slider2">
+                    <div>
+                        <span id="duration">0</span>
+                        <input type="range" class= "range1" name="" value="0" min="0" max="100"
+                        onmousemove="rangeSlider(this.value) " onChange="rangeSlider(this.value)">
+                        </div>
+                    <script type="text/javascript">
+                        function rangeSlider(value){
+                        document.getElementById('duration').innerHTML = value;}
+                        </script>
+                    </div>
+                <div class="slider3">
+                    <div>
+                        <span id="tempo">0</span>
+                        <input type="range" class= "range2" name="" value="0" min="0" max="100"
+                        onmousemove="rangeSlider(this.value) " onChange="rangeSlider(this.value)">
+                        </div>
+                    <script type="text/javascript">
+                        function rangeSlider(value){
+                        document.getElementById('tempo').innerHTML = value;}
+                        </script>
+                    </div>
+                <div class="slider4">
+                    <div>
+                        <span id="valence">0</span>
+                        <input type="range" class= "range3" name="" value="0" min="0" max="100"
+                        onmousemove="rangeSlider(this.value) " onChange="rangeSlider(this.value)">
+                        </div>
+                    <script type="text/javascript">
+                        function rangeSlider(value){
+                        document.getElementById('valence').innerHTML = value;}
+                        </script>
+                    </div>
+                -->
         <nav>
+                           
             <div class="social">
                 <div class="icons">
                     <a href="#">
@@ -54,18 +93,7 @@
                 </div>
             </div>
 
-            <section id="sliders">
-                    
-                <div class="slider2">
-                    <div class="duration"></div>
-                </div>
-                <div class="slider3">
-                    <div class="tempo"></div>
-                </div>
-                <div class="slider4">
-                    <div class="valence"></div>
-                </div>
-            </section>
+           
             <div class="row clearfix">
                 <img src="images/android-chrome-512x512.png" class="logo">
                 <ul class="main-nav animated slideInRight" id="check-status">
