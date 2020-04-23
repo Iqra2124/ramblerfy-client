@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Ramblerfy</title>
     <!--   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -16,9 +17,19 @@
         integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous" />
 
 </head>
-
+<header>
 <body>
-    <header>
+     <div class="slider1">
+    <div>
+        <span id="dancability">0</span>
+        <input type="range" class= "range" name="" value="0" min="0" max="100"
+        onmousemove="rangeSlider(this.value) " onChange="rangeSlider(this.value)">
+        </div>
+    <script type="text/javascript">
+        function rangeSlider(value){
+        document.getElementById('dancability').innerHTML = value;}
+        </script>
+    </div>
         <nav>
             <div class="social">
                 <div class="icons">
@@ -44,9 +55,7 @@
             </div>
 
             <section id="sliders">
-                <div class="slider1">
-                    <div class="dancability"></div>
-                </div>
+                    
                 <div class="slider2">
                     <div class="duration"></div>
                 </div>
