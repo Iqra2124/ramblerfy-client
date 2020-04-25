@@ -5,26 +5,29 @@
 }
 
 body {
+    background-image: url('../images/headertemp.jpg');
     font-size: 20px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    height: 100%;
+    width: 100%;
     color: white;
     font-family: 'Bellota', cursive;
 }
 
 header {
-background-image: url('../images/headertemp.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
-.clearfix:after {
+.top:after {
     content: ".";
     visibility: hidden;
     display: block;
     height: 0px;
     clear: both;
 }
+
 .row {
     max-width: 1180px;
     margin: 0 auto;
@@ -41,7 +44,8 @@ height: 100vh;
 .main-nav {
     float: right;
     margin-top: 60px;
-    }
+    margin-right: 40px;
+}
 
 .main-nav li {
     display: inline-block;
@@ -64,24 +68,27 @@ height: 100vh;
 
 .main-content-header{
     width: 1180px;
-    position: absolute;
-    top: 50%;
+    height:auto;
+      position: relative;
+    top: 40%;
     left: 50% ;
     transform: translate(-50%, -50%);
 }
 
 h1{
     color: white;
-    font-size: 240%;
+    font-size: 200%;
     text-align: center;
     word-spacing: 5px;
     letter-spacing: 2px;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
 }
 
 h2{
     color:whitesmoke;
     text-align: center;
+    font-size: 130%;
+    margin-top: 10px;
 }
 
 .social{
@@ -91,6 +98,7 @@ h2{
     margin-left: 90%;
     top: 40%;
 }
+
 .icons{
     width: 40px;
     margin-right: 50%;
@@ -102,22 +110,28 @@ h2{
     justify-content: center;
     margin: 20px;
 }
+
 #container {
     text-align: center;
-  }
-  
- .btn {
-       
-    display: block;
+    margin-bottom: 50px;
+}
+
+input {
+ outline:none;
+}
+
+.btn {
+
+    display: inline-block;
     padding: 10px;
     width:190px;
     margin-left: 15%;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 200px;
-    
+
 }
 
 .btn-one {
@@ -125,20 +139,19 @@ h2{
     color: black;
     margin-right: 15px;
     border: 1px solid whitesmoke;
-    
+    display: inline-block;
 }
 
 .btn-one:hover{
     background-color: #67168a;
 }
 
-
 .btn-two {
     background-color: #320446;
     color: whitesmoke;
     margin-right: 15px ;
     border: 1px solid whitesmoke;
- 
+    display: inline-block;
 }
 
 .btn-two:hover{
@@ -150,6 +163,7 @@ h2{
     color:black;
     margin-right: 15px;
     border: 1px solid whitesmoke;
+    display: inline-block;
 }
 
 .btn-three:hover{
@@ -161,32 +175,88 @@ h2{
     color: whitesmoke;
     margin-right: 15px;
     border: 1px solid whitesmoke;
+    display: inline-block;
 }
 
 .btn-four:hover{
     background-color: #390550;
 }
 
-/*#allsliders{/*keeps entire section of sliders together in one place*/
-  /*  width: 600px;
-    height: 250px;
-    position: absolute;
-    margin-left: 40%;
-    margin-top:23%;
-   
-    background-color:rgba(0, 9, 10, 0.8);
-    
-}*/
-.slider1{/*box behind slider*/
+.group {
+    position:relative;
+    right:90px;
+    list-style: none;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.slider {
+  position:relative;
+    left:50px;
+    margin-top: 5px;
+}
+
+.slider2 #duration{/*CORRRREEEECCCTTTTT*/
+
+    background-color: snow;
+    margin-top: 50%;
+    width: 100px;
+    color: black;
+
+    /*
+    position:absolute;
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    margin-top: 50%;
+    margin-right:0px;
+    background: #333;
+    border-radius: 50px;
+*/
+}
+/*
+.btn .btn-one .slider1{/*box behind slider*//*
     width: 400px;
     height: 30px;
-    position: absolute;
+    display: inline-block;
     margin-left: 45%;
     margin-top:24%;
     background-color:rgba(0,0,0, 0.8);
 }
+
+.btn .btn-two .slider2{/*box behind slider*//*
+    width: 400px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top:24%;
+    background-color:rgba(0,0,0, 0.8);
+}
+
+.btn .btn-three .slider3{/*box behind slider*//*
+    width: 400px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top:24%;
+    background-color:rgba(0,0,0, 0.8);
+}
+
+.btn .btn-four .slider4{/*box behind slider*//*
+   background-color: turquoise;
+}
+
+/*
 #dancability{
-   /*box measuring amount on side*/
+   /*box measuring amount on side
    position: absolute;
    right:-60px;
    padding :10px;
@@ -197,10 +267,75 @@ h2{
    border-radius: 10%;
    margin-top: 0px;
    font-family: Georgia;
-   
+
 }
 
+#duration{
+   /*box measuring amount on side
+   position: absolute;
+   right:-60px;
+   padding :10px;
+   width: 50px;
+   box-sizing: border-box;
+   background: rgb(180, 66, 224);
+   text-align: center;
+   border-radius: 10%;
+   margin-top: 0px;
+   font-family: Georgia;
+
+}
+
+#tempo{
+   /*box measuring amount on side
+   position: absolute;
+   right:-60px;
+   padding :10px;
+   width: 50px;
+   box-sizing: border-box;
+   background: rgb(180, 66, 224);
+   text-align: center;
+   border-radius: 10%;
+   margin-top: 0px;
+   font-family: Georgia;
+
+}
+
+#valence{
+   /*box measuring amount on side
+   position: absolute;
+   right:-60px;
+   padding :10px;
+   width: 50px;
+   box-sizing: border-box;
+   background: rgb(180, 66, 224);
+   text-align: center;
+   border-radius: 10%;
+   margin-top: 0px;
+   font-family: Georgia;
+
+}
+*/
+
 .range0{
+    width:375px;
+    height: 7px;
+    background: black;
+    margin-left: 3%;
+    -webkit-appearance: none;
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0, 1)
+}
+
+.range0::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+   border-radius: 50%;
+   background: rgb(67, 224, 252);
+   box-shadow: -407px 0 0 400px #00fd0a;
+}
+
+.range1{
     width:375px;
     height: 7px;
     background: skyblue;
@@ -209,78 +344,50 @@ h2{
     border-radius: 15px;
 }
 
-
-.range0::-webkit-slider-thumb{
+.range1::-webkit-slider-thumb{
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
-   border-radius: 50%; 
+   border-radius: 50%;
    background: tomato;
    /*box-shadow: -407px 0 0 400px;*/
 }
-/*
-.slider2{
-    width: 575px;
-    height: 30px;
-    position: absolute;
-    margin-left: 2%;
-    margin-top:13%;
-    background-color:rgba(0,0,0, 0.8); 
 
-
-}
-
-.duration{
-    /*working on slider itself*//*
-    position: relative;
-    margin: 12px auto;
-    width: 500px;
+.range2{
+    width:375px;
     height: 7px;
-    background-color: seashell;
-    border-radius: 15px;
-    
-}
-
-.slider3{
-    width: 575px;
-    height: 30px;
-    position: absolute;
-    margin-left: 2%;
-    margin-top:24%;
-   
-    background-color:rgba(0,0,0, 0.8);
-
-}
-
-.tempo{
-    /*working on slider itself*//*
-    position: relative;
-    margin: 12px auto;
-    width: 500px;
-    height: 7px;
-    background-color: seashell;
+    background: skyblue;
+    margin-left: 3%;
+    -webkit-appearance: none;
     border-radius: 15px;
 }
 
-.slider4{
-    width: 575px;
-    height: 30px;
-    position: absolute;
-    margin-left: 2%;
-    margin-top:34%;
-   
-    background-color:rgba(0,0,0, 0.8);
-
+.range2::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+   border-radius: 50%;
+   background: tomato;
+   /*box-shadow: -407px 0 0 400px;*/
 }
-.valence{
-    /*working on slider itself*//*
-    position: relative;
-    margin: 12px auto;
-    width: 500px;
+
+.range3{
+    width:375px;
     height: 7px;
-    background-color: seashell;
+    background: skyblue;
+    margin-left: 3%;
+    -webkit-appearance: none;
     border-radius: 15px;
-}*/
+}
+
+.range3::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+   border-radius: 50%;
+   background: tomato;
+   /*box-shadow: -407px 0 0 400px;*/
+}
 
 .colorchange{
     animation: colorchangeRamblerfy 1s infinite ;
@@ -305,10 +412,11 @@ h2{
 @media only screen and (max-width: 768px){
 
     .main-nav{display: none;}
-   
-    .movable-icon{ display:inline block ;
+
+    .movable-icon{ 
+        display:inline block ;
         color: mintcream;
-        float: right; 
+        float: right;
         margin-top: 20px;
         margin-right: 20px;
     /*Gotta WORK ON THIS PART*/
