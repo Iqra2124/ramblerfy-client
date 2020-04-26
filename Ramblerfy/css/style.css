@@ -120,6 +120,20 @@ input {
  outline:none;
 }
 
+button {
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+    width:190px;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 200px;
+
+}
+/*
 .btn {
 
     display: inline-block;
@@ -134,7 +148,7 @@ input {
 
 }
 
-.btn-one {
+#btn-one {
     background-color: whitesmoke;
     color: black;
     margin-right: 15px;
@@ -142,7 +156,7 @@ input {
     display: inline-block;
 }
 
-.btn-one:hover{
+#btn-one:hover{
     background-color: #67168a;
 }
 
@@ -181,7 +195,7 @@ input {
 .btn-four:hover{
     background-color: #390550;
 }
-
+*/
 .group {
    /* position:relative;*/
     right:90px;
@@ -198,52 +212,14 @@ input {
 .slider {
    /*position: absolute; */
     left: 65px;
-    margin-top: 10px;
+    margin-top: 0px;
+    
     
 }
 div{
     position: relative;
 }
-#dancability{/*CORRRREEEECCCTTTTT*/
-    position: absolute;
-    top: 0;
-    border-radius: 10%;
-    padding: 2px;
-    background: black;
-   
-    width: 50px;
-    height:35px;
-    color: snow;
-    text-align: center;
-    font-size: 15px;
-    right: 50mm;
-}
-
-.range0{
-    width:400px;
-    height: 17px;
-    background: black;
-    outline: none;
-    margin-left: 3%;
-    -webkit-appearance: none;
-    border-radius: 15px;
-    box-shadow: inset 0 0 5px rgba(0,0,0, 1);
-    overflow: hidden;
-    
-}
-
-.range0::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 17px;
-    height: 17px;
-   border-radius: 50%;
-   background: rgb(67, 224, 252);
-   cursor: pointer;
-   border:4px solid black;
-   box-shadow: -407px 0 0 400px #5ce2fa;
-}
-
-#duration{/*CORRRREEEECCCTTTTT*/
+#dancability{
     position: absolute;
     top: 0;
     border-radius: 10%;
@@ -282,13 +258,12 @@ div{
    box-shadow: -407px 0 0 400px #5ce2fa;
 }
 
-#tempo{/*CORRRREEEECCCTTTTT*/
+#tempo{
     position: absolute;
     top: 0;
     border-radius: 10%;
     padding: 2px;
     background: black;
-   
     width: 50px;
     height:35px;
     color: snow;
@@ -321,13 +296,12 @@ div{
    box-shadow: -407px 0 0 400px #5ce2fa;
 }
 
-#valence{/*CORRRREEEECCCTTTTT*/
+#duration{
     position: absolute;
     top: 0;
     border-radius: 10%;
     padding: 2px;
     background: black;
-   
     width: 50px;
     height:35px;
     color: snow;
@@ -360,7 +334,43 @@ div{
    box-shadow: -407px 0 0 400px #5ce2fa;
 }
 
+#valence{
+    position: absolute;
+    top: 0;
+    border-radius: 10%;
+    padding: 2px;
+    background: black;
+    width: 50px;
+    height:35px;
+    color: snow;
+    text-align: center;
+    font-size: 15px;
+    right: 50mm;
+}
 
+.range4{
+    width:400px;
+    height: 17px;
+    background: black;
+    outline: none;
+    margin-left: 3%;
+    -webkit-appearance: none;
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0, 1);
+    overflow: hidden;
+    
+}
+
+.range4::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+   border-radius: 50%;
+   background: rgb(67, 224, 252);
+   cursor: pointer;
+   border:4px solid black;
+   box-shadow: -407px 0 0 400px #5ce2fa;
+}
 
 .colorchange{
     animation: colorchangeRamblerfy 1s infinite ;
