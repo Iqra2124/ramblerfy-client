@@ -77,11 +77,11 @@ header {
 
 h1{
     color: white;
-    font-size: 200%;
+    font-size: 220%;
     text-align: center;
     word-spacing: 5px;
     letter-spacing: 2px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 h2{
@@ -112,7 +112,7 @@ h2{
 }
 
 #container {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
 }
 
@@ -131,6 +131,7 @@ button {
     text-align: center;
     text-decoration: none;
     border-radius: 200px;
+    
 
 }
 /*
@@ -145,60 +146,11 @@ button {
     text-align: center;
     text-decoration: none;
     border-radius: 200px;
+}*/
 
-}
-
-#btn-one {
-    background-color: whitesmoke;
-    color: black;
-    margin-right: 15px;
-    border: 1px solid whitesmoke;
-    display: inline-block;
-}
-
-#btn-one:hover{
-    background-color: #67168a;
-}
-
-.btn-two {
-    background-color: #320446;
-    color: whitesmoke;
-    margin-right: 15px ;
-    border: 1px solid whitesmoke;
-    display: inline-block;
-}
-
-.btn-two:hover{
-    background-color: transparent;
-}
-
-.btn-three {
-    background-color: whitesmoke;
-    color:black;
-    margin-right: 15px;
-    border: 1px solid whitesmoke;
-    display: inline-block;
-}
-
-.btn-three:hover{
-    background-color: #67168a;
-}
-
-.btn-four{
-    background-color: black;
-    color: whitesmoke;
-    margin-right: 15px;
-    border: 1px solid whitesmoke;
-    display: inline-block;
-}
-
-.btn-four:hover{
-    background-color: #390550;
-}
-*/
 .group {
    /* position:relative;*/
-    right:90px;
+    right:3%;
     list-style: none;
     width: 100%;
     height: 90px;
@@ -211,27 +163,36 @@ button {
 
 .slider {
    /*position: absolute; */
-    left: 65px;
+    margin-left: 40%;
     margin-top: 0px;
-    
-    
+    margin-bottom: 2px;
+       
 }
 div{
     position: relative;
 }
+
 #dancability{
     position: absolute;
     top: 0;
-    border-radius: 10%;
+    border-radius: 45%;
     padding: 2px;
     background: black;
-   
     width: 50px;
     height:35px;
     color: snow;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     right: 50mm;
+}
+.btnOne {
+    background-color: whitesmoke;
+    color: black;
+   
+    }
+
+.btnOne:hover{
+    background-color: #a22cd4;
 }
 
 .range1{
@@ -239,6 +200,7 @@ div{
     height: 17px;
     background: black;
     outline: none;
+    margin-top: 15px;
     margin-left: 3%;
     -webkit-appearance: none;
     border-radius: 15px;
@@ -261,15 +223,25 @@ div{
 #tempo{
     position: absolute;
     top: 0;
-    border-radius: 10%;
+    border-radius: 45%;
     padding: 2px;
     background: black;
     width: 50px;
     height:35px;
     color: snow;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     right: 50mm;
+}
+
+.btnTwo {
+    background-color: #320446;
+    color: whitesmoke;
+
+}
+
+.btnTwo:hover{
+    background-color: transparent;
 }
 
 .range2{
@@ -277,6 +249,7 @@ div{
     height: 17px;
     background: black;
     outline: none;
+    margin-top: 15px;
     margin-left: 3%;
     -webkit-appearance: none;
     border-radius: 15px;
@@ -299,22 +272,30 @@ div{
 #duration{
     position: absolute;
     top: 0;
-    border-radius: 10%;
+    border-radius: 45%;
     padding: 2px;
     background: black;
     width: 50px;
     height:35px;
     color: snow;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     right: 50mm;
 }
+.btnThree {
+    background-color: whitesmoke;
+    color:black;  
+}
 
+.btnThree:hover{
+    background-color: #ab08f1;
+}
 .range3{
     width:400px;
     height: 17px;
     background: black;
     outline: none;
+    margin-top: 15px;
     margin-left: 3%;
     -webkit-appearance: none;
     border-radius: 15px;
@@ -324,7 +305,7 @@ div{
 }
 
 .range3::-webkit-slider-thumb{
-    -webkit-appearance: none;
+   -webkit-appearance: none;
     width: 17px;
     height: 17px;
    border-radius: 50%;
@@ -337,15 +318,24 @@ div{
 #valence{
     position: absolute;
     top: 0;
-    border-radius: 10%;
+    border-radius: 45%;
     padding: 2px;
     background: black;
     width: 50px;
     height:35px;
     color: snow;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     right: 50mm;
+}
+
+.btnFour{
+    background-color: black;
+    color: whitesmoke;
+    }
+
+.btnFour:hover{
+    background-color: #390550;
 }
 
 .range4{
@@ -353,6 +343,7 @@ div{
     height: 17px;
     background: black;
     outline: none;
+    margin-top: 15px;
     margin-left: 3%;
     -webkit-appearance: none;
     border-radius: 15px;
