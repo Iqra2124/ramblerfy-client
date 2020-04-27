@@ -69,7 +69,7 @@ header {
 .main-content-header{
     width: 1180px;
     height:auto;
-      position: relative;
+    position: relative;
     top: 40%;
     left: 50% ;
     transform: translate(-50%, -50%);
@@ -78,10 +78,11 @@ header {
 h1{
     color: white;
     font-size: 220%;
-    text-align: center;
+    text-align: left;
     word-spacing: 5px;
     letter-spacing: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 8px;
+    margin-top: 75px;
 }
 
 h2{
@@ -90,7 +91,11 @@ h2{
     font-size: 130%;
     margin-top: 10px;
 }
-
+h4{
+   text-align: center;
+    margin-right: 40%;
+    
+}
 .social{
     width: 100px;
     height: auto;
@@ -101,32 +106,32 @@ h2{
 
 .icons{
     width: 40px;
-    margin-right: 50%;
+    margin-right: 500px;
     height: 40px;
     border-radius: 50%;
     background:rgba(224, 242, 245, 0.8);
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 25px;
 }
 
 #container {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: 1px;
+
 }
 
-input {
- outline:none;
-}
+
 
 button {
-    display: inline-block;
+    display: block;
     height: 40px;
     padding: 10px;
     width:190px;
-    margin-left: 15%;
-    margin-top: 10px;
+    margin-left: 13%;
+    margin-top: 1px;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
@@ -134,45 +139,33 @@ button {
     
 
 }
-/*
-.btn {
 
-    display: inline-block;
-    padding: 10px;
-    width:190px;
-    margin-left: 15%;
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 200px;
-}*/
 
 .group {
    /* position:relative;*/
     right:3%;
     list-style: none;
     width: 100%;
-    height: 90px;
+    height: 100px;
     margin: 0;
     padding: 0;
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    
 }
 
 .slider {
    /*position: absolute; */
+ 
     margin-left: 40%;
     margin-top: 0px;
     margin-bottom: 2px;
+    
        
 }
 div{
     position: relative;
 }
 
-#dancability{
+#danceability{
     position: absolute;
     top: 0;
     border-radius: 45%;
