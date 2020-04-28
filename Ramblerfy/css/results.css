@@ -1,2 +1,124 @@
 
+body {
+    background-image: url('../images/headertemp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+audio{
+    position: relative;
+    margin-top: 10px;
+}
+.sidenavbar{
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(255, 255, 255, 0.6);
+    padding-top: 90px;
+    overflow-x: hidden;
+    
+}
+.logo {
+    height: 150px;
+    width: 150px;
+    float: center;
+    margin-top: 0px;
+}
+.sidenavbar a{
+    padding: 16px 35px;
+    font-size: x-large;
+    color: black;
+    display: block;
+    text-decoration: none;
 
+}
+.main{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: snow;
+    margin-bottom: 10px;
+}
+#container {
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 17%;
+    padding-bottom: 0;
+    margin-right:2%;
+    margin-bottom: 10px;
+}
+.pix-grid{
+    display: grid;
+    justify-items: center;
+    margin-right: 80px;
+    grid-gap: 1px;
+    grid-row-gap: 15px;
+    grid-column-gap:10px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+.grid-box img{
+    width: 100%;
+}
+#playlist{
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#playlist li a{
+    color: snow;
+    text-decoration:snow;
+}
+
+.player{
+    background-color:white;
+    padding: 10px;
+    margin-top: 17px;
+    margin-left: 240px;
+    width: 55%;
+    position: fixed;
+    bottom: 10px;
+    border: 5px solid rgb(128, 15, 221)
+}
+
+ button{
+     position:right fixed;
+     width:45px;
+     height: 45px;
+     margin-top:9% ;
+     right: 40%;
+     margin-left: 10px;
+     background-color:snow;
+     color: snow;
+     text-align: center;
+     font-size: medium;
+     border-radius: 50%;
+      }
+    
+    .prevTrack{
+          background-image: url(../images/backwardicon.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+    
+      }
+
+    .nextTrack{
+        background-image: url(../images/forwardicon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .shuffleTrack{
+        background-image: url(../images/shuffle.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    
+  }
+  .repeatTrack{
+        background-image: url(../images/repeat1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    
+  }

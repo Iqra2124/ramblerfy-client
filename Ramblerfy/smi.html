@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <link rel="stylesheet" type="text/css" href="css/smi.css">
+    <div id=container>
+<div class="group">
+                
+    <button class="btnFour" onclick="myFunctionFour()">VALENCE</button>
+    
+    <div id="btn-four">
+        <div class="mood">😄</div>
+        <div class="slider slider4">
+            <div>
+                <h4>Sad <--> Happy</h4>
+                
+                <span id="valence">0</span>
+                <input type="range" class="range4" value="0" min="0" max="4">
+                    
+            </div>
+
+            <script type="text/javascript">
+            const range = document.querySelector('input');
+            const div = document.querySelector('.mood');
+            const mojis = ['😄','🙂','😐','😑','☹️'];
+
+            range.addEventListener('input', (e) => {
+            let rangeValue = e.target.value;
+            div.textContent = mojis[rangeValue];
+                });
+            </script>
+        </div>
+        
+    </div>
+    <script>
+        function myFunctionFour() {
+            var x = document.getElementById("btn-four");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+
+    </script>
+</div> 
+</div>
+</html>

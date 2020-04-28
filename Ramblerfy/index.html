@@ -56,147 +56,109 @@
                 <a href="#" class="movable-icon" onclick="slideshow()"> <i class="fa fa-align-justify"></i></i> </a>
             </div>
         </nav>
-
+              
+        
         <div class="main-content-header">
             <h1>WELCOME TO <span class="colorchange">RAMBLERFY!</span><br>
                 WHERE YOU FIND THE BEST JAMS <br></h1>
             <h2>PICK A GENRE!</h2>
                 
 
-            <div id="container">
-                <div class="group">
-                    <button class=btnOne onclick="myFunctionOne()">DANCEABILITY</button>
-                    <div id="btn-one">
-                        <div class="slider slider1">
-                            <div>
-                                <span id="danceability">0</span>
-                                <input type="range" class="range1" name="" value="0" min="0" max="100"
-                                    onmousemove="rangeSlider1(this.value)" onChange="rangeSlider1(this.value)">
-                            </div>
-                            <script type="text/javascript">
-                                function rangeSlider1(value) {
-                                    document.getElementById('danceability').innerHTML = value;
-                                }
-                            </script>
-                        </div>
-                    </div>
-                    <script>
-                        function myFunctionOne() {
-                            var x = document.getElementById("btn-one");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            }
-                            else {
-                                x.style.display = "none";
-                            }
-                        }
-                    </script>
-                </div>
-
-                <div class="group">
-                    <button class="btnTwo" onclick="myFunctionTwo()">TEMPO</button>
-                    <div id="btn-two">
-                        <div class="slider slider2">
-                            <div>
-                                <h4>Beats Per Minute</h4>
-                                <span id="tempo">70</span>
-                               
-                                <input type="range" class="range2" name="" value="0" min="70" max="190"
-                                    onmousemove="rangeSlider2(this.value)" onChange="rangeSlider2(this.value)">
-                            </div>
-                            <script type="text/javascript">
-                                function rangeSlider2(value) {
-                                    document.getElementById('tempo').innerHTML = value;
-                                }
-                            </script>
-                        </div>
-                    </div>
-                    <script>
-                        function myFunctionTwo() {
-                            var x = document.getElementById("btn-two");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            }
-                            else {
-                                x.style.display = "none";
-                            }
-                        }
-
-                    </script>
-                </div>
-
-                <div class="group">
-                    <button class="btnThree" onclick="myFunctionThree()">DURATION</button>
-                    <div id="btn-three">
-                        <div class="slider slider3">
-                            <div>
-                                <h4>Minutes</h4>
-                                <span id="duration">0</span>
-                                           <input type="range" class="range3" name="" value="0" min="0" max="8"
-                                    onmousemove="rangeSlider3(this.value)" onChange="rangeSlider3(this.value)">
-                            </div>
-                            <script type="text/javascript">
-                                function rangeSlider3(value) {
-                                    document.getElementById('duration').innerHTML = value;
-                                }
-                            </script>
-                        </div>
-                    </div>
-                    <script>
-                        function myFunctionThree() {
-                            var x = document.getElementById("btn-three");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            }
-                            else {
-                                x.style.display = "none";
-                            }
-                        }
-
-                    </script>
-                </div>
-                <!--
-                    <div class="group">
+         <div id="container">
                 
-                    <button class="btnFour" onclick="myFunctionFour()">VALENCE</button>
-                    
-                    <div id="btn-four">
-                        <div class="mood">😄</div>
-                        <div class="slider slider4">
-                            <div>
-                                <h4>Sad <--> <!--Happy</h4>
-                                
-                                <span id="valence">0</span>
-                                <input type="range" class="range4" value="0" min="0" max="4">
-                                    
-                            </div>
-
-                            <script type="text/javascript">
-                            const range = document.querySelector('input');
-                            const div = document.querySelector('.mood');
-                            const mojis = ['😄','🙂','😐','😑','☹️'];
-
-                            range.addEventListener('input', (e) => {
-                            let rangeValue = e.target.value;
-                            div.textContent = mojis[rangeValue];
-                                });
-                            </script>
-                        </div>
-                        
+             
+        <div class="group">
+            <button class=btnOne onclick="myFunctionOne()">DANCEABILITY</button>
+            <div id="btn-one">
+                <div class="slider slider1">
+                    <div>
+                        <span id="danceability">0</span>
+                        <input type="range" class="range1" name="" value="0" min="0" max="100"
+                            onmousemove="rangeSlider1(this.value)" onChange="rangeSlider1(this.value)">
                     </div>
-                    <script>
-                        function myFunctionFour() {
-                            var x = document.getElementById("btn-four");
-                            if (x.style.display === "none") {
-                                x.style.display = "block";
-                            }
-                            else {
-                                x.style.display = "none";
-                            }
+                    <script type="text/javascript">
+                        function rangeSlider1(value) {
+                            document.getElementById('danceability').innerHTML = value;
                         }
-
                     </script>
-                </div> -->
+                </div>
+            </div>
+            <script>
+                function myFunctionOne() {
+                    var x = document.getElementById("btn-one");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+    
+        <div class="group">
+            <button class="btnTwo" onclick="myFunctionTwo()">TEMPO</button>
+            <div id="btn-two">
+                <div class="slider slider2">
+                    <div>
+                        <h4>Beats Per Minute</h4>
+                        <span id="tempo">70</span>
+                       
+                        <input type="range" class="range2" name="" value="0" min="70" max="190"
+                            onmousemove="rangeSlider2(this.value)" onChange="rangeSlider2(this.value)">
+                    </div>
+                    <script type="text/javascript">
+                        function rangeSlider2(value) {
+                            document.getElementById('tempo').innerHTML = value;
+                        }
+                    </script>
+                </div>
+            </div>
+            <script>
+                function myFunctionTwo() {
+                    var x = document.getElementById("btn-two");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+
+            </script>
+        </div>
+
+        <div class="group">
+            <button class="btnThree" onclick="myFunctionThree()">DURATION</button>
+            <div id="btn-three">
+                <div class="slider slider3">
+                    <div>
+                        <h4>Minutes</h4>
+                        <span id="duration">0</span>
+                                   <input type="range" class="range3" name="" value="0" min="0" max="8"
+                            onmousemove="rangeSlider3(this.value)" onChange="rangeSlider3(this.value)">
+                    </div>
+                    <script type="text/javascript">
+                        function rangeSlider3(value) {
+                            document.getElementById('duration').innerHTML = value;
+                        }
+                    </script>
+                </div>
+            </div>
+            <script>
+                function myFunctionThree() {
+                    var x = document.getElementById("btn-three");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+
+            </script>
+        </div>     
+                    
 
                 <div class="group">
                 
@@ -231,7 +193,50 @@
                         }
 
                     </script>
+                </div> 
+                <!--
+        <div class="group">
+                
+            <button class="btnFour" onclick="myFunctionFour()">VALENCE</button>
+            
+            <div id="btn-four">
+                <div class="mood">😄</div>
+                <div class="slider slider4">
+                    <div>
+                        <h4>Sad <--> <!--Happy</h4>
+                        
+                        <span id="valence">0</span>
+                        <input type="range" class="range4" value="0" min="0" max="4">
+                            
+                    </div>
+
+                    <script type="text/javascript">
+                    const range = document.querySelector('input');
+                    const div = document.querySelector('.mood');
+                    const mojis = ['😄','🙂','😐','😑','☹️'];
+
+                    range.addEventListener('input', (e) => {
+                    let rangeValue = e.target.value;
+                    div.textContent = mojis[rangeValue];
+                        });
+                    </script>
                 </div>
+                
+            </div>
+            <script>
+                function myFunctionFour() {
+                    var x = document.getElementById("btn-four");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    }
+                    else {
+                        x.style.display = "none";
+                    }
+                }
+
+            </script>
+        </div>
+    -->
             </div>
         </div>
     </header>
