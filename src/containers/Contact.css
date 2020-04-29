@@ -1,0 +1,115 @@
+.wrapper{
+    margin: auto;
+    margin-top:3%;
+    width:75%; /*Moves the info text horizontally*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper h1{
+    margin-top: 10px;
+    color: black;
+    text-align:left;
+    font-size: 40px;
+    font-family: 'Bellota', cursive;
+}
+.information h3{
+    font-family: 'Bellota', cursive;
+    font-size: large;
+}
+
+.information info.fa{
+    color: snow;
+    font-size: larger;
+    padding: 17px;
+    border-radius: 80%;
+    margin: 15px;
+    border: 2px solid black;
+}
+
+.information {
+    display:grid;
+    grid-template-columns: auto auto;
+
+}
+.details{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Bellota', cursive;
+    color:snow;
+    letter-spacing: 3px;
+}
+
+.form{
+    width:550px;
+    max-width: 550px;
+    padding:10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin:15px;
+    margin-left: 50px;
+}
+.form h4{
+    color:snow;
+    margin: 10px;
+    font-family: 'Bellota', cursive;
+}
+
+#form1 input{
+     padding: 10px;
+     margin: 10px;
+     width: 92%;
+     height:45px;
+     border:none;
+     color:snow;
+     background-color:rgba(0,0,0, 0.7);
+     font-family: 'Bellota', cursive;
+    font-size: medium;
+ }
+
+ #form1 input::placeholder{
+     font-size: medium;
+     color: snow;
+     font-family: 'Bellota', cursive;
+ }
+
+#form1 textarea{
+     margin: 10px;
+     padding:10px;
+     max-width: 500px;
+     font-size: medium;
+     width:92%;
+     color:snow;
+     font-family: 'Bellota', cursive;
+     background-color: rgba(0,0,0, 0.7);
+      }
+
+ #form1 textarea::placeholder{
+    color:snow;
+    font-family: 'Bellota', cursive;
+    font-size: medium;
+  }
+
+.submit{
+    color:black;
+    margin: 10px;
+    padding: 7px;
+    font-size: large;
+    width: 40%;
+    background-color:rgb(183, 130, 236);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Bellota', cursive;
+    }
+
+@media (max-width: 768px){
+    .information{
+        display: block;
+        width: 100%;
+        text-align:center;
+
+        }
+    .submit{
+        width: 60%;
+    }
+    }
