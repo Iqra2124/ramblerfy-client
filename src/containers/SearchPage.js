@@ -80,12 +80,12 @@ export default function SearchPage(props) {
           </div>
 
           <div className="group">
-            <button className="btnTwo" onClick={handleBtn2Change}>TEMPO</button>
+            <button className="btnTwo" onClick={handleBtn2Change}>TEMPO (bpm)</button>
             {showSlider2
               ? <div id="btn-two">
                   <div className="slider slider2">
                     <div>
-                      <h4>BPM</h4>
+                      
                       <span id="tempo">{slider2Val}</span>
                       <input type="range" className="range2" name defaultValue={slider2Val} min={70} max={200} onMouseMove={handleSlider2Change} onChange={handleSlider2Change} />
                     </div>
@@ -96,12 +96,12 @@ export default function SearchPage(props) {
           </div>
 
           <div className="group">
-            <button className="btnThree" onClick={handleBtn3Change}>DURATION</button>
+            <button className="btnThree" onClick={handleBtn3Change}>DURATION (mins)</button>
             {showSlider3
               ? <div id="btn-three">
                   <div className="slider slider3">
                     <div>
-                      <h4>Minutes</h4>
+                     
                       <span id="duration">{slider3Val}</span>
                       <input type="range" className="range3" name defaultValue={slider3Val} min={0} max={8} onMouseMove={handleSlider3Change} onChange={handleSlider3Change} />
                     </div>
@@ -112,12 +112,12 @@ export default function SearchPage(props) {
           </div>
 
           <div className="group">
-            <button className="btnFour" onClick={handleBtn4Change}>VALENCE</button>
+            <button className="btnFour" onClick={handleBtn4Change}>VALENCE (mood)</button>
             {showSlider4
               ? <div id="btn-four">
                   <div className="slider slider4">
                     <div>
-                      <h4>Sad &lt;--&gt; Happy</h4>
+                    
                       <span id="valence">{slider4Val}</span>
                       <input type="range" className="range4" name defaultValue={slider4Val} min={0} max={10} onMouseMove={handleSlider4Change} onChange={handleSlider4Change} />
                     </div>
