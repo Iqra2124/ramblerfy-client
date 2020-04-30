@@ -1,26 +1,57 @@
+.Home{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 1%;
+}
+
+h1{
+    font-family: 'Bellota', cursive;  
+    margin-left: 70px; 
+    padding-top: 20px;
+}
+ul.description{
+    list-style-type: none;
+    }
+
 h3{
     color: white;
     word-spacing: 5px;
+    margin-left: 70px;
     letter-spacing: 2px;
-    margin-bottom: 25px;
+    font-family: 'Bellota', cursive;
+    margin-bottom: 20px;
 }
 h2{
-    color: powderblue;
-    font-size: 240%;
+    color: white;
+    font-size: 150%;
     word-spacing: 5px;
+    margin-left: 70px;
     letter-spacing: 2px;
     margin-bottom: 25px;
+    font-family: 'Bellota', cursive;
 }
 p{
-    color: lightcyan;
+    color: powderblue;
     word-spacing: 5px;
+    margin-left: 70px;
     letter-spacing: 2px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    font-family: 'Bellota', cursive;
 }
 a{
     color: powderblue;
-    font-size: 240%;
+    font-size: 150%;
     word-spacing: 5px;
     letter-spacing: 2px;
-    margin-bottom: 25px;
+    margin-left: 60px;
+    padding-bottom: 10px;
+    font-family: 'Bellota', cursive;
 }

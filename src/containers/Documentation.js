@@ -4,16 +4,18 @@ import './Documentation.css';
 //home page
 export default function Home() {
     return (
+      
+        <div id="container">
         <div className="main-content-header">
             <h1>How does this Work? </h1>
             <h2>We are using the Spotify API to find the following, using our database of 25,000 songs:</h2>
-            <ul>
+            <ul class="description">
                 <li>
                     <h3>Danceability</h3>
                     <p>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</p>
                 </li>
                 <li>
-                    <h3>Duration:</h3>
+                    <h3>Duration</h3>
                     <p>The duration of the track in Minutes and seconds.</p>
                 </li>
                 <li>
@@ -27,5 +29,7 @@ export default function Home() {
             </ul>
             <a href="https://developer.spotify.com/console/">Check out the Spotify API</a>
         </div>
+        </div>
+        
     );
 }
