@@ -38,7 +38,7 @@ export default function Settings(props) {
     );
     */
     return (
-      <div className="main-content-header">
+      <div className="main-content-headerSettings">
           <h1>My Account:<br />
               {userCreds !== null ? userCreds.attributes.email : "none"} </h1>
       </div>

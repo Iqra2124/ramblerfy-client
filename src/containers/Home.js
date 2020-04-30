@@ -7,17 +7,17 @@ export default function Home(props) {
 
   function unAuthPage() {
     return (
-      <div className="main-content-header">
+      <div className="main-content-headerHome">
           <h1>WELCOME TO <span className="colorchange">RAMBLERFY!</span><br />
               WHERE YOU FIND THE BEST JAMS </h1>
-          <h2 className="login">Login or Signup to start jamming</h2>
+          <h2 className="login">Login or Signup to start jamming!!</h2>
       </div>
     )
   }
 
   function AuthPage() {
     return (
-      <div className="main-content-header">
+      <div className="main-content-headerHome">
           <h1>WELCOME TO <span className="colorchange">RAMBLERFY!</span><br />
               WHERE YOU FIND THE BEST JAMS </h1>
           <LinkContainer to="/searchpage">

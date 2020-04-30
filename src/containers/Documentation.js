@@ -6,7 +6,7 @@ export default function Home() {
     return (
       
         <div id="containerdocumentation">
-        <div className="main-content-header">
+        <div className="main-content-headerDocumentation">
             <h1>How does this Work? </h1>
             <h2>We are using the Spotify API to find the following, using our database of 25,000 songs:</h2>
             

@@ -14,12 +14,12 @@
 }
 */
 
-.main-content-header{
+.main-content-headerHome{
     width: 1180px;
     position: absolute;
     top: 50%;
     left: 50% ;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
 }
 
 h1{

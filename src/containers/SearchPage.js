@@ -50,7 +50,7 @@ export default function SearchPage(props) {
 
   function unAuthPage() {
     return (
-      <div className="main-content-header">
+      <div className="main-content-headerSearch">
           <h1>WELCOME TO <span className="colorchange">RAMBLERFY!</span><br />
               WHERE YOU FIND THE BEST JAMS </h1>
           <h2 className="login">You must be logged in to search</h2>
@@ -60,10 +60,10 @@ export default function SearchPage(props) {
 
   function AuthPage() {
     return (
-      <div className="main-content-header">
+      <div className="main-content-headerSearch">
         <h2>PICK A GENRE!</h2>
 
-        <div id="container">
+        <div id="containerSearch">
           <div className="group">
             <button className="btnOne" onClick={handleBtn1Change}>DANCEABILITY</button>
             {showSlider1
