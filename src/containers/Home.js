@@ -10,7 +10,7 @@ export default function Home(props) {
       <div className="main-content-header">
           <h1>WELCOME TO <span className="colorchange">RAMBLERFY!</span><br />
               WHERE YOU FIND THE BEST JAMS </h1>
-          <h2 className="login">Login to start jamming</h2>
+          <h2 className="login">Login or Signup to start jamming</h2>
       </div>
     )
   }

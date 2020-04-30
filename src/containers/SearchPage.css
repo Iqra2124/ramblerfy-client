@@ -28,9 +28,10 @@ h2{
     font-size: 130%;
     margin-top: 10px;
     margin-bottom: 50px;
+    font-family: 'Bellota', cursive;
 }
 
-h4{
+h4{font-family: 'Bellota', cursive;
     text-align: center;
 
 }
